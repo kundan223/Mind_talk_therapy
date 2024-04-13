@@ -17,7 +17,7 @@ const Game2 = () => {
     return (
         <div className='bg-gradient-to-br h-screen from-yellow-400 to-white-500'>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 text-center py-[20px]">
-                Choose one of the following
+                Which one?
             </h1>
             <div className='flex justify-center items-center bg-yellow-50 h-screen'>
                 <div className='main_box grid grid-cols-2 grid-rows-2 gap-4'>
