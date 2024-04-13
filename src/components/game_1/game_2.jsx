@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Landscape from '../images/landscape.png';
 import Sleep from '../images/sleep1.png';
+import Walking from '../images/walking_3d.png';
+
 
 const Game2 = () => {
     const navigate = useNavigate();
@@ -31,13 +33,13 @@ const Game2 = () => {
                         onClick={() => { handleClick(); navigate('/activity') }}
                     >
                         <img src={Landscape} alt="Conversation" className="w-full h-24 object-contain mb-2" />
-                        <span className="text-center">Conversation</span>
+                        <span className="text-center">Reading</span>
                     </div>
                     <div
                         className={`bg-green-200 h-[350px] w-[350px] rounded-md border border-gray-400 flex flex-col justify-center items-center cursor-pointer transform ${clicked ? 'scale-105' : ''}`}
                         onClick={() => { handleClick(); navigate('/box3') }}
                     >
-                        <img src={Landscape} alt="Feelings" className="w-full h-24 object-contain mb-2" />
+                        <img src={Walking} alt="Feelings" className="w-full h-24 object-contain mb-2" />
                         <span className="text-center">Walking</span>
                     </div>
                     <div
@@ -45,7 +47,7 @@ const Game2 = () => {
                         onClick={() => { handleClick(); navigate('/box4') }}
                     >
                         <img src={Landscape} alt="Food" className="w-full h-24 object-contain mb-2" />
-                        <span className="text-center">Food</span>
+                        <span className="text-center">Swiming</span>
                     </div>
                 </div>
             </div>
